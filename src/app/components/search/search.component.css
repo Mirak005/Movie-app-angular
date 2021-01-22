@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+}
+
+header form > * {
+  margin: 0 10px;
+}

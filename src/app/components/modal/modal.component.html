@@ -1,0 +1,19 @@
+<div>
+  <button (click)="toggleIsOpen()">Add Movie</button>
+  <div class="modal-container" [class.open]="isOpen" (click)="toggleIsOpen()">
+    <form (click)="stopPropagation($event)">
+      <h3>Add Movie</h3>
+      <label>Title</label>
+      <input type="text" placeholder="Title..." />
+      <label>Year Of relase</label>
+      <input type="text" pattern="[0-9]{4}" placeholder="Year..." />
+      <label>Rate</label>
+      <input type="text" pattern="[0-5]{1}" placeholder="Rate..." />
+      <label>Category</label>
+      <input type="text" placeholder="Category..." />
+      <label>Image</label>
+      <input type="url" placeholder="image url..." />
+      <button>Submit</button>
+    </form>
+  </div>
+</div>

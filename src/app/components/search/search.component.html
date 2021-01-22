@@ -1,0 +1,7 @@
+<header>
+  <h1>MovieApp</h1>
+  <form>
+    <input #searchValue (input)="search(searchValue.value)" type="text" />
+    <app-star-rating (handleRate)="searchByRate($event)"></app-star-rating>
+  </form>
+</header>
