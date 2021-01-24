@@ -32,4 +32,9 @@ export class AppComponent implements OnInit {
           .includes(this.searchValue.trim().toLowerCase())
     );
   }
+
+  addMovie(newMovie: IMovie): void {
+    newMovie._id = this.movieList.length.toString();
+    this.movieList.push(newMovie);
+  }
 }

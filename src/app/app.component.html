@@ -4,4 +4,4 @@
 ></app-search>
 
 <app-movies-container [movieList]="handleFilter()"></app-movies-container>
-<app-modal></app-modal>
+<app-modal (addMovie)="addMovie($event)"></app-modal>
